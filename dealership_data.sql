@@ -1,0 +1,68 @@
+insert into CUSTOMER (
+	PHONE,
+	FIRST_NAME,
+	LAST_NAME,
+	ADDRESS
+) values (
+	3177776597,
+	'JESSIE',
+	'BAKER',
+	'123 YADA STRT YOOHOOSVILLE, STROODLEDO 45643'
+	
+);
+
+insert into SALESPERSON (
+	EMPLOYEE_ID
+) values (
+	7894
+);
+
+insert into CAR (
+	VIN
+) values (
+	'1F2G3H32142D1FSD'
+);
+
+insert into INVOICE (
+	INVOICE_NUM,
+	PHONE,
+	EMPLOYEE_ID,
+	VIN
+) values (
+	987546,
+	3177776597,
+	7894,
+	'1F2G3H32142D1FSD'
+);
+
+insert into MECHANIC (
+	MECH_ID
+) values (
+	5462
+);
+
+insert into PARTS_ORDER (
+	PO_NUM,
+	PART_NUM,
+	PART_COST
+) values (
+	654213,
+	65473245,
+	56.53
+);
+
+insert into REPAIR_ORDER (
+	RO_NUM,
+	VIN,
+	PO_NUM,
+	PHONE,
+	DUE_ON_RETURN,
+	MECH_ID
+) values (
+	654767,
+	'1F2G3H32142D1FSD',
+	654213,
+	3177776597,
+	12345.54,
+	5462
+);
